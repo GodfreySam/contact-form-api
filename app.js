@@ -2,7 +2,6 @@ const express = require("express");
 const logger = require("morgan");
 const routers = require("./routes/index");
 const cors = require("cors");
-const path = require("path");
 
 const app = express();
 
