@@ -51,9 +51,9 @@ const contact = async (req, res, next) => {
 				to: process.env.MAIL_USER,
 				subject: "From Portfolio",
 				text: `
-            From: ${req.body.name}\n \n
-            From: ${req.body.email}\n \n
-            Email: ${req.body.subject} \n \n
+            <name>: ${req.body.name}\n 
+            <email>: ${req.body.email}\n
+            <subject>: ${req.body.subject} \n \n
             ${req.body.message}`,
 			};
 
